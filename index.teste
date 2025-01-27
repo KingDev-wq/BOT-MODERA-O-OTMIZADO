@@ -1,10 +1,4 @@
-const { Client, Intents } = require("discord.js");
-const { token, prefix } = require("./config.json");
-
-const client = new Client({
-    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS]
-});
-
+const { Client, Intents } = require("discord.js"
 // Evento: Quando o bot estiver pronto
 client.once("ready", () => {
     console.log(`Bot online como ${client.user.tag}!`);
